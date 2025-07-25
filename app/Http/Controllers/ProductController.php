@@ -109,7 +109,7 @@ class ProductController extends Controller
     {
         return response()->json([
             'status' => [
-                'error' => true,
+                'error' => false,
                 'title' => $title,
                 'message' => $message,
             ],
@@ -127,7 +127,7 @@ class ProductController extends Controller
     {
         return response()->json([
             'status' => [
-                'error' => false,
+                'error' => true,
                 'title' =>  $title,
                 'message' => $message,
             ],
