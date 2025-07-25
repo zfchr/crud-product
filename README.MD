@@ -202,7 +202,7 @@ http://your-domain.com/api
 ```json
 {
   "status": {
-    "error": true,
+    "error": false,
     "title": "Success",
     "message": "The new data has been successfully saved."
   },
