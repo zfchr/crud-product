@@ -4,6 +4,7 @@ API endpoint untuk mengelola data product.
 -composer install / update
 -buat file .env dari .env.example lalu php artisan key:generate
 -php artisan migrate, disini saya memakai DB Mysql
+-php artisan serve
 ```
 
 ## 📍 Base URL
@@ -20,7 +21,7 @@ http://your-domain.com/api
 ```json
 {
   "status": {
-    "error": true,
+    "error": false,
     "title": "Success",
     "message": "The operation was successful"
   },
@@ -34,7 +35,7 @@ http://your-domain.com/api
 ```json
 {
   "status": {
-    "error": false,
+    "error": true,
     "title": "Failed to process your request",
     "message": "Something went wrong"
   },
@@ -55,7 +56,7 @@ http://your-domain.com/api
 ```json
 {
   "status": {
-    "error": true,
+    "error": false,
     "title": "Success",
     "message": "Success"
   },
@@ -86,7 +87,7 @@ http://your-domain.com/api
 ```json
 {
   "status": {
-    "error": true,
+    "error": false,
     "title": "Success",
     "message": "Success"
   },
@@ -135,7 +136,7 @@ http://your-domain.com/api
 ```json
 {
   "status": {
-    "error": true,
+    "error": false,
     "title": "Success",
     "message": "The new data has been successfully created."
   },
@@ -167,7 +168,7 @@ http://your-domain.com/api
 ```json
 {
   "status": {
-    "error": false,
+    "error": true,
     "title": "Failed to process your request",
     "message": "SQLSTATE[23000]: Integrity constraint violation..."
   },
@@ -227,7 +228,7 @@ http://your-domain.com/api
 {
   "status": {
     "error": false,
-    "title": "Failed to process your request",
+    "title": "Success",
     "message": "The data has been success deleted."
   },
   "data": []
